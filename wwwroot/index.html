@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignalR Draw</title>
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" />
+</head>
+<body class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+            <label for="colorSelect">畫筆顏色：</label>
+            <input id="colorSelect" type="color" />
+            <label for="lineWidthSelect">畫筆粗細：</label>
+            <select id="lineWidthSelect">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+            </select><br />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+            <canvas id="board" width="400" height="300" style="border: solid;"></canvas>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2 text-center">
+            <button class="btn btn-primary" id="clearBoardBtn">清空畫布</button>
+        </div>
+    </div>
+
+    <script src="lib/signalr/signalr.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
